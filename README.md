@@ -1,37 +1,39 @@
 # reactLocalStorage
-Easy use localstorage in Reactjs
-
+Easy use localstorage in Preact. It also supports SSR (Prerender).
 
 ## Installation
 
 ```bash
-npm install reactjs-localstorage
+npm install preact-localstorage
 ```
 or
 ```bash
-yarn add reactjs-localstorage
+yarn add preact-localstorage
 ```
 
 ## Examples
 
 ```javascript
-import {reactLocalStorage} from 'reactjs-localstorage';
+import {preactLocalStorage} from 'preact-localstorage';
 
-reactLocalStorage.set('var', true);
-reactLocalStorage.get('var', true);
-reactLocalStorage.setObject('var', {'test': 'test'});
-reactLocalStorage.getObject('var');
-reactLocalStorage.remove('var');
-reactLocalStorage.clear();
+preactLocalStorage.set('var', true);
+preactLocalStorage.get('var', true);
+preactLocalStorage.setObject('var', {'test': 'test'});
+preactLocalStorage.getObject('var');
+preactLocalStorage.remove('var');
+preactLocalStorage.clear();
 ```
 
 ## API Guide
-- `reactLocalStorage.set(key, value)`
-- `reactLocalStorage.get(key, deafultValue=undefined, silent=true)`
-- `reactLocalStorage.setObject(key, object)`
-- `reactLoacStorage.getObject(key, defaultValue={}, silent=true)`
-- `reactLocalStorage.remove(key)`
-- `reactLocalStorage.clear()`
+
+**Default VALUE is required while getting values (because SSR doesn't have real localStorage)**
+
+- `preactLocalStorage.set(key, value)`
+- `preactLocalStorage.get(key, deafultValue, silent=true)`
+- `preactLocalStorage.setObject(key, object)`
+- `preactLocalStorage.getObject(key, defaultValue, silent=true)`
+- `preactLocalStorage.remove(key)`
+- `preactLocalStorage.clear()`
 
 **silent**:
 - `true`: Will not throw exception instead will return defaultValue
@@ -39,7 +41,3 @@ reactLocalStorage.clear();
 
 ## License
 MIT
-
-## Donation Button
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YYZQ6ZRZ3EW5C)

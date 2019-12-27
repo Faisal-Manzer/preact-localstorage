@@ -1,17 +1,17 @@
 {
-  "name": "reactjs-localstorage",
-  "version": "0.0.8",
-  "description": "Easy use localstorage in Reactjs",
-  "main": "react-localstorage.js",
+  "name": "preact-localstorage",
+  "version": "0.0.1",
+  "description": "Easy use localstorage in Preact",
+  "main": "preact-localstorage.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/null-none/react-localstorage.git"
+    "url": "https://github.com/Faisal-Manzer/preact-localstorage.git"
   },
-  "keywords": ["reactjs", "localstorage", "react", "local storage"],
+  "keywords": ["preact", "localstorage", "react", "local storage"],
   "bugs": {
-    "url": "https://github.com/null-none/react-localstorage/issues"
+    "url": "https://github.com/Faisal-Manzer/preact-localstorage.git/issues"
   },
-  "homepage": "https://github.com/null-none/react-localstorage",
-  "author": "Dmitry Kalinin",
+  "homepage": "https://github.com/Faisal-Manzer/preact-localstorage.git",
+  "author": "Faisal Manzer",
   "license": "MIT"
 }
