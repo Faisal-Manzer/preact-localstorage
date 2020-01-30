@@ -4,32 +4,32 @@
  * LICENCE file at project root
  */
 
-if (typeof window === 'undefined')
-    preactLocalStorage = {
-        set(key, value) {
-            localStorage[key] = value;
-            return localStorage[key];
-        },
-        get(key, defaultValue = undefined, silent = true) {
-            if (defaultValue === undefined)
-                console.error('Please Provide a default');
+preactLocalStorage = {
+    set(key, value) {
+        localStorage[key] = value;
+        return localStorage[key];
+    },
+    get(key, defaultValue = undefined, silent = true) {
+        if (defaultValue === undefined)
+            console.error('Please Provide a default');
 
-            return defaultValue;
-        },
-        setObject(key, value) {
-            return value;
-        },
-        getObject(key, defaultValue = undefined, silent = true) {
-            return this.get(key, JSON.stringify(defaultValue), silent);
-        },
-        clear() {
-            return {};
-        },
-        remove(key) {
-            return true;
-        }
-    };
-else {
+        return defaultValue;
+    },
+    setObject(key, value) {
+        return value;
+    },
+    getObject(key, defaultValue = undefined, silent = true) {
+        return this.get(key, JSON.stringify(defaultValue), silent);
+    },
+    clear() {
+        return {};
+    },
+    remove(key) {
+        return true;
+    }
+};
+
+if (typeof window !== 'undefined') {
     /**
      * @copyright Dmitry Kalinin
      * MIT Licenced
@@ -73,4 +73,4 @@ else {
     };
 }
 
-exports.preactLocalStorage = preactLocalStorage;
+module.exports = preactLocalStorage;

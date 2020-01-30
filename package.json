@@ -1,6 +1,6 @@
 {
   "name": "preact-localstorage",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Easy use localstorage in Preact",
   "main": "preact-localstorage.js",
   "repository": {
@@ -12,6 +12,6 @@
     "url": "https://github.com/Faisal-Manzer/preact-localstorage.git/issues"
   },
   "homepage": "https://github.com/Faisal-Manzer/preact-localstorage.git",
-  "author": "Faisal Manzer",
+  "author": "Faisal Manzer <faisal_manzer@yahoo.in>",
   "license": "MIT"
 }
