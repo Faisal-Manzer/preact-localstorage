@@ -54,7 +54,7 @@ if (typeof window !== 'undefined') {
             return localStorage[key];
         },
         getObject: function (key, defaultValue = {}, silent = true) {
-            value = this.get(key, JSON.stringify(defaultValue), silent);
+            var value = this.get(key, JSON.stringify(defaultValue), silent);
 
             try {
                 return JSON.parse(value);
